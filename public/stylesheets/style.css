@@ -1,11 +1,39 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 15px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+  background-color: antiquewhite;
 }
 
 a {
   color: #00B7FF;
+  text-decoration: none;
+  transition: 0.3s;
 }
+
+a:hover {
+  color: purple;
+  transition: 0.3s; 
+}
+
+.navi {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 1vmin 5vmin 1vmin 5vmin;
+  margin: -1vmin -5vmin -1vmin -5vmin;
+}
+
+nav {
+  display: flex;
+  background-color: aquamarine;
+  padding: 1vmin;
+  margin-right: 15vmin;
+  margin-left: 15vmin;
+  font-weight: bold;
+  justify-content: space-around;
+}
+
 
 .delete-form {
   display: inline-block;
@@ -15,7 +43,43 @@ a {
 .delete-form button {
   color: red;
 }
+
+ul {
+  display: flexbox;
+  border: 1px solid black;
+  background-color: lightgray;
+  margin-right: 15vmin;
+  margin-left: 15vmin;
+}
 	
 li {
+  padding: 1vmin;
+  font-size: 24px;
   list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+#add {
+  color: lime;
+  padding: 1vmin;
+  border: 1px solid black;
+  background-color:cornsilk;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+#skill {
+  padding: 2vmin;
+  background-color: rgb(214, 208, 185);
+  margin-right: 25vmin;
+  margin-left: 25vmin;
+  border: 1px solid black;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
 }

@@ -1,7 +1,7 @@
 <%- include('../partials/header') %>
 
-<h3><%= skill.skill %></h3>
-<h3>Proficiency: <%= skill.proficiency %>/5</h3>
+<div id="skill"><h3><%= skill.skill %></h3>
+<h3>Proficiency: <%= skill.proficiency %>/5</h3></div><br>
 <a href="/skills/<%= skill.id %>/edit">Edit Skill</a><br><br>
 <form
 action="/skills/<%= skill.id %>?_method=DELETE"
